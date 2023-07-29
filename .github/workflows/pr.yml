@@ -14,9 +14,11 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Check source branch
-        run: exit 1
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.ref != 'next'
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          package-name: my-package-prerelease
+          default-branch: next
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
