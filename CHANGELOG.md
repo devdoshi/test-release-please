@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/devdoshi/test-release-please/compare/v1.0.0...v2.0.0) (2023-07-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* more languages
+
+### Features
+
+* more languages ([718deb8](https://github.com/devdoshi/test-release-please/commit/718deb869cee4fa2e1dfa6555052b85c3870fa23))
+
 ## 1.0.0 (2023-07-28)
 
 
