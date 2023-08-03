@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/devdoshi/test-release-please/compare/v3.0.0...v2.0.0) (2023-08-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* manual major bump again
+
+### Features
+
+* manual major bump again ([61fd786](https://github.com/devdoshi/test-release-please/commit/61fd7860fe4a08ba69c35030801eccef5f4689f3))
+
+
+### Miscellaneous Chores
+
+* release 2.0.0 ([f6c2bf8](https://github.com/devdoshi/test-release-please/commit/f6c2bf828564269675e2599ac652dc36f8834f15))
+
 ## [3.0.0](https://github.com/devdoshi/test-release-please/compare/v2.0.0...v3.0.0) (2023-08-02)
 
 
