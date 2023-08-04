@@ -46,5 +46,5 @@ jobs:
           header: preview
           message: |
             ```diff
-            $RELEASE_PLEASE_OUTPUT
+            ${{env.RELEASE_PLEASE_OUTPUT}}
             ```
