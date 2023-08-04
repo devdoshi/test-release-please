@@ -31,7 +31,13 @@ jobs:
       - name: install release-please
         run: npm install -g release-please
         # add the output to a github env var
+
+        # echo 'DIFF<<EOF' >> $GITHUB_ENV
+        # echo "${DIFF}" >> $GITHUB_ENV
+        # echo 'EOF' >> $GITHUB_ENV
       - run: |
-          echo "RELEASE_PLEASE_OUTPUT=$(release-please release-pr --trace --dry-run --release-type=node --repo-url=${{github.repository}} --token=${{secrets.GITHUB_TOKEN}} --target-branch=${{github.event.pull_request.head.ref}} | awk '/Index\:/{flag=1} flag')" >> $GITHUB_ENV
+          echo 'RELEASE_PLEASE_OUTPUT<<EOF' >> $GITHUB_ENV
+          echo $(release-please release-pr --trace --dry-run --release-type=node --repo-url=${{github.repository}} --token=${{secrets.GITHUB_TOKEN}} --target-branch=${{github.event.pull_request.head.ref}} | awk '/Index\:/{flag=1} flag') >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
       - run: echo $RELEASE_PLEASE_OUTPUT
 
