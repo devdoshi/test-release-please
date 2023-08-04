@@ -30,4 +30,4 @@ jobs:
           node-version: 18.x
       - name: install release-please
         run: npm install -g release-please
-      - run: release-please release-pr --trace --dry-run --release-type=node --token=${{secrets.GITHUB_TOKEN}} --target-branch=${{github.event.pull_request.head.ref}}
+      - run: release-please release-pr --trace --dry-run --release-type=node --repo-url=${{github.repository_owner}}/${{github.repository.name}} --token=${{secrets.GITHUB_TOKEN}} --target-branch=${{github.event.pull_request.head.ref}}
