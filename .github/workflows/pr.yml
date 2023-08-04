@@ -30,4 +30,8 @@ jobs:
           node-version: 18.x
       - name: install release-please
         run: npm install -g release-please
-      - run: release-please release-pr --trace --dry-run --release-type=node --repo-url=${{github.repository}} --token=${{secrets.GITHUB_TOKEN}} --target-branch=${{github.event.pull_request.head.ref}}
+        # add the output to a github env var
+      - run: |
+          echo "RELEASE_PLEASE_OUTPUT=$(release-please release-pr --trace --dry-run --release-type=node --repo-url=${{github.repository}} --token=${{secrets.GITHUB_TOKEN}} --target-branch=${{github.event.pull_request.head.ref}} | awk '/Index\:/{flag=1} flag')" >> $GITHUB_ENV
+      - run: echo $RELEASE_PLEASE_OUTPUT
+
