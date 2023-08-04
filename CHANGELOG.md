@@ -1,5 +1,24 @@
 # Changelog
 
+## [3.1.0](https://github.com/devdoshi/test-release-please/compare/v3.0.6...v3.1.0) (2023-08-04)
+
+
+### Features
+
+* add output ([552c26b](https://github.com/devdoshi/test-release-please/commit/552c26b1817fde828648d018752cd77bba0f59cd))
+* comment output on pr ([022f682](https://github.com/devdoshi/test-release-please/commit/022f682e81d539ffa4f931bd901207a5a78da861))
+* minor bump ([7455c34](https://github.com/devdoshi/test-release-please/commit/7455c3422688981a2ee5be92057d155ef7dd2c56))
+
+
+### Bug Fixes
+
+* actually fix ([c40729d](https://github.com/devdoshi/test-release-please/commit/c40729d3acc0e63173e6c8e4464e11d4f72268db))
+* env var creation ([cf9a8e7](https://github.com/devdoshi/test-release-please/commit/cf9a8e713ea979bfa4f7c296a59ecccd914deb1a))
+* patch bump ([a107712](https://github.com/devdoshi/test-release-please/commit/a107712cb7d14f7f57981227ae38ba43cd5c0efc))
+* release-please invocation ([f310513](https://github.com/devdoshi/test-release-please/commit/f3105131f39f43069eac2899ed94d51f4791e1a0))
+* tweak ([236a74f](https://github.com/devdoshi/test-release-please/commit/236a74f107775a9ff6020b0330b726b925a191a8))
+* use env ([c7982bb](https://github.com/devdoshi/test-release-please/commit/c7982bb025cc647d6e51f1d1694dab8dd0bdc110))
+
 ## [3.0.6](https://github.com/devdoshi/test-release-please/compare/v3.0.5...v3.0.6) (2023-08-04)
 
 
