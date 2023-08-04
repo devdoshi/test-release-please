@@ -1,6 +1,5 @@
 on:
-  # when we merge a PR to main, create a draft release PR to main
-  push:
+  pull_request:
     branches:
       - main
 
@@ -21,4 +20,14 @@ jobs:
         with:
           release-type: node
           package-name: my-package
-          default-branch: main
+          # the current pull request branch:
+          default-branch: ${{ github.event.pull_request.head.ref }}
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: install release-please
+        run: npm install -g release-please
+      - run: release-please release-pr --trace --dry-run --release-type=node --token=${{secrets.GITHUB_TOKEN}} --target-branch=${{github.event.pull_request.head.ref}}
