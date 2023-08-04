@@ -40,4 +40,11 @@ jobs:
           echo $(release-please release-pr --trace --dry-run --release-type=node --repo-url=${{github.repository}} --token=${{secrets.GITHUB_TOKEN}} --target-branch=${{github.event.pull_request.head.ref}} | awk '/Index\:/{flag=1} flag') >> $GITHUB_ENV
           echo 'EOF' >> $GITHUB_ENV
       - run: echo $RELEASE_PLEASE_OUTPUT
-
+      - name: comment the output on the pr
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: preview
+          message: |
+            ```diff
+            $RELEASE_PLEASE_OUTPUT
+            ```
