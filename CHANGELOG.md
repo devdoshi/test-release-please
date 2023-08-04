@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.4](https://github.com/devdoshi/test-release-please/compare/v3.0.3...v3.0.4) (2023-08-04)
+
+
+### Bug Fixes
+
+* patch bump ([b62f01a](https://github.com/devdoshi/test-release-please/commit/b62f01ae5fcbc3eb568ddeddb51915d859ac50be))
+
 ## [3.0.3](https://github.com/devdoshi/test-release-please/compare/v3.0.2...v3.0.3) (2023-08-04)
 
 
