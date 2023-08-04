@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/devdoshi/test-release-please/compare/v2.0.0...v3.0.0) (2023-08-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* manual breaking change
+
+### Features
+
+* manual breaking change ([e9d01e4](https://github.com/devdoshi/test-release-please/commit/e9d01e454feb8b43ce3dc8aa24dbc54ebbfd820c))
+
 ## [2.0.0](https://github.com/devdoshi/test-release-please/compare/v1.0.0...v2.0.0) (2023-08-04)
 
 
