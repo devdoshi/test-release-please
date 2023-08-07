@@ -50,3 +50,5 @@ jobs:
             ```diff
             ${{env.RELEASE_PLEASE_OUTPUT}}
             ```
+            This is a preview of the changes that would be made to the changelog by release-please. If other changes have been merged in the meantime, rerun the github action here or push new changes.
+            TODO: you can bump or override versions by commenting on this PR
