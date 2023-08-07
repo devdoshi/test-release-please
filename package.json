@@ -1,6 +1,6 @@
 {
   "name": "test-release-please",
-  "version": "3.2.1",
+  "version": "4.0.0",
   "description": "Test project for release-please",
   "main": "index.js",
   "scripts": {
